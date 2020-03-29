@@ -2,8 +2,8 @@ public class SendMailSSL {
     public static Receiver emailReceiver = new Receiver();
     public static void main(String[] args) {
         //from,password,to,subject,message
-        String username = "teleatnicalina@gmail.com";
-        String password = "apollo11kimnayoung+--@";
+        String username = "example@gmail.com";
+        String password = "password";
         String receiver = "teleatnicalina@gmail.com";
         String subject = "hello javatpoint";
         String message = "How r u?";
