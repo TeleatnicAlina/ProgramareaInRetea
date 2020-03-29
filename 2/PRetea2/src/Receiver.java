@@ -46,7 +46,7 @@ public class Receiver {
             Message[] messages = folderInbox.getMessages();
             BufferedWriter writer = new BufferedWriter(new FileWriter("D:/UTM/samplefile.txt"));
 
-            for (int i = 0; i < 20; i++) {
+            for (int i = 0; i < messages.length; i++) {
 
                 Message msg = messages[i];
 
