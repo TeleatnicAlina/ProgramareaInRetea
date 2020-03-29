@@ -91,19 +91,18 @@ public class Receiver {
                 }
 
                 writer.write("*********************************************Message " + (i + 1) + ":**********************************************8");
-               writer.write("\n --------------From: " + from);
+                writer.write("\n --------------From: " + from);
                 writer.write("\n --------------To: " + toList);
                 writer.write("\n --------------CC: " + ccList);
                 writer.write("\n --------------Subject: " + subject);
                 writer.write("\n --------------Sent Date: " + sentDate);
-                 writer.write("\n -------------Message: " + messageContent);
+                writer.write("\n -------------Message: " + messageContent);
 
             }
 
 writer.close();
 
-            // disconnect
-
+       
             folderInbox.close(false);
 
             store.close();
@@ -141,15 +140,12 @@ writer.close();
             for (Address value : address) {
 
                 listAddress.append(value.toString()).append(", ");
-
             }
-
         }
 
         if (listAddress.length() > 1) {
 
             listAddress = new StringBuilder(listAddress.substring(0, listAddress.length() - 2));
-
         }
         return listAddress.toString();
     }
