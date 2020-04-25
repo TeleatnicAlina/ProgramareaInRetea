@@ -16,7 +16,7 @@ public class HttpClientStatus {
                 .build();
         HttpResponse<Void> response = client.send(request,
                 HttpResponse.BodyHandlers.discarding());
-
+        System.out.println(response);
         if (response.statusCode() == 200) {
             System.out.println("\n\n GET request:");
             Get.sendGet(ipAdddress, port);
